@@ -1,0 +1,15 @@
+{
+    "id" : "attribute_validator",
+    "title": "AS Attribute Validator",
+    "description": "This tool validates attribute names in AudienceStream",
+    "icon_url" : "https://tools.tealiumiq.com/tools/logo.png",
+    "scripts": {
+      "import" : {
+          "button_label": "Init",
+          "template": "https://cdn.rawgit.com/tygavin/tealium-tools/v1.0/hello-world/hello-world.html",
+          "js": "https://cdn.rawgit.com/tygavin/tealium-tools/v1.0/hello-world/hello-world.js",
+          "remote_js": true,
+          "remote_template": true
+      }
+    }
+}
