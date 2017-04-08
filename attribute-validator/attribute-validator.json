@@ -6,8 +6,8 @@
     "scripts": {
       "import" : {
           "button_label": "Init",
-          "template": "https://cdn.rawgit.com/tygavin/tealium-tools/v1.0/hello-world/hello-world.html",
-          "js": "https://cdn.rawgit.com/tygavin/tealium-tools/v1.0/hello-world/hello-world.js",
+          "template": "https://rawgit.com/samconran/Attribute-Validator/master/attribute-validator/ui.html",
+          "js": "https://rawgit.com/samconran/Attribute-Validator/master/attribute-validator/page.js",
           "remote_js": true,
           "remote_template": true
       }
