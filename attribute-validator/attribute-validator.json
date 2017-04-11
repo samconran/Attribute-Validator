@@ -2,7 +2,6 @@
     "id" : "attribute_validator",
     "title": "AS Attribute Validator (Beta)",
     "description": "This tool validates attribute names in AudienceStream. It will validate both AS and TiQ attributes being passed through AudienceStream which may cause you errors. Please hit 'validate' below to check this profile for invalid attribute names.",
-    "icon_url" : "https://tools.tealiumiq.com/tools/logo.png",
     "scripts": {
       "import" : {
           "button_label": "VALIDATE",
