@@ -6,8 +6,8 @@
     "scripts": {
       "import" : {
           "button_label": "VALIDATE",
-          "template": "https://conrantest.com/Attribute-Validator/attribute-validator/ui.html",
-          "js": "https://conrantest.com/Attribute-Validator/attribute-validator/page.js",
+          "template": "https://rawgit.com/samconran/Attribute-Validator/master/attribute-validator/ui.thml",
+          "js": "https:/https://rawgit.com/samconran/Attribute-Validator/master/attribute-validator/page.js",
           "remote_js": true,
           "remote_template": true
       }
