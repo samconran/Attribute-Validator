@@ -1,4 +1,106 @@
 <script type="text/x-handlebars">
 
- <br>
- <b>Welcome to the AS Attribute Validator</b>
+  <style>
+    table {
+      width: 100%;
+      border: 2px solid black;
+      margin: 15px 0;
+    }
+    tr:hover {
+      background-color: #b1e0e2;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 5px;
+      height: 25px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .table_title {
+      font-size : 18px;
+      color: #b40000;
+    }
+    p {
+      font-size: 14px;
+    }
+    .success_header {
+      font-weight: 600;
+      margin: 20px 0;
+      text-align: center;
+      font-size: 24px;
+      color:#00b42d;
+    }
+    .success_message {
+      margin: 10px 0;
+    }
+    .error {
+      color:#b40000;
+    }
+    .fine {
+      color:#00b42d;
+    }
+    a{
+      color: #00A8B6;
+    }
+    a:hover{
+      color:#2e8eff;
+    }
+  </style>
+
+  <p>Please find the results of the attribute name validation below:</p>
+  <hr>
+  <div class="response">
+    {{#if response}}
+      <p> If you would like to know more about the attributes here, please check the console for more detalied information. </p>
+      {{#each response}}
+          <table>
+            <tr>
+              <th class="table_title" colspan="2"> ERROR {{index}} </th>
+            </tr>
+            <tr>
+              <th> Attribute Name: </th>
+              <td>{{name}}</td>
+            </tr>
+            <tr>
+              <th> Attribute Type: </th>
+              <td>{{type}}</td>
+            </tr>
+            <tr>
+              <th> Attribute Location: </th>
+              <td>{{location}}</td>
+            </tr>
+            <tr>
+              <th> Problem: </th>
+              {{#if issue}}
+                <td>The attribute's name is too long.</td>
+              {{else}}
+                <td>The attribute's name contains an invlid character.</td>
+              {{/if}}
+            </tr>
+            <tr>
+              {{#if issue}}
+                <th> Length: </th>
+                <td> <span class="error">{{detail}}</span> / <span class="fine">250</span></td>
+              {{else}}
+                <th> Invalid Character: </th>
+                <td>{{detail}}</td>
+              {{/if}}
+            </tr>
+            <tr>
+              {{#if issue}}
+                <th> Characters over limit: </th>
+              {{else}}
+                <th> Invalid Character Position: </th>
+              {{/if}}
+              <td>{{specific}}</td>
+            </tr>
+          </table>
+      {{/each}}
+    {{else}}
+      <h3 class="success_header"> ALL CLEAR </h3>
+      <p class="success_message"> There have been no errors! All attribute names for this profile, in both AS and TiQ, are made of up to 250 valid characters. </p>
+    {{/if}}
+    <hr>
+    <p>Comments / bugs / feature requests? Send them to <a href="mailto:sam.conran@tealium.com">sam.conran@tealium.com</a></p>
+  </div>
+</script>
