@@ -5,8 +5,8 @@
     "scripts": {
       "import" : {
           "button_label": "VALIDATE",
-          "template": "https://raw.githubusercontent.com/samconran/Attribute-Validator/master/attribute-validator/ui.html",
-          "js": "https://raw.githubusercontent.com/samconran/Attribute-Validator/master/attribute-validator/page.js",
+          "template": "https://rawcdn.githack.com/samconran/Attribute-Validator/master/attribute-validator/ui.html",
+          "js": "https://rawcdn.githack.com/samconran/Attribute-Validator/master/attribute-validator/page.js",
           "remote_js": true,
           "remote_template": true
       }
